@@ -1,9 +1,12 @@
 
 // Import the MongoClient constructor from the mongodb library
 import { MongoClient, ServerApiVersion } from "mongodb";
+import { config } from "dotenv";
+
+config();
 
 
-const connectionString = process.env.ATLAS_URI || "mongodb+srv://tobi4u:CNJYumNErFl2JDZY@tobi4u.byvrs22.mongodb.net/?retryWrites=true&w=majority&appName=tobi4u";
+const connectionString = process.env.ATLAS_URI || "";
 
 // mongoose.connect(connectionString);
 

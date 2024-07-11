@@ -4,9 +4,9 @@ import movieRoutes from './routes/movieRoutes.js';
 
 
 const app = express();
-const PORT = 2001
+const PORT = 2001 
 app.use(express.json());
-app.use("/movies", movieRoutes)
+app.use("/movie", movieRoutes)
 
 
 app.get('/', (req, res) => {
